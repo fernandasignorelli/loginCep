@@ -3,20 +3,61 @@ body, html{
     margin: 0;
 }
 
+body {
+    background-image: url(./img/fundo2.jpg);
+    background-size: 100% 100%;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+}
+
+.titulo-container{
+    color: #db2777;
+}
+
 .box{
     width: 40vh;
+    height: 40vh;
     margin: 0 auto;
-    background-color: rgb(136, 99, 196);
+    background-color: rgb(255, 255, 255);
+    border-radius: 1vh;
     padding: 0px 15px 10px 8px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .box .input{
-    width: 100%;
-    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1vh;
+    margin-bottom: 1vh;
+    padding: 5%;
+    border-style: none;
+    background-color: #e6e9ee;
+}
+
+.botao{
+    background-color: transparent;
+    color: #db2777;
+    padding: 1vh 2vh;
+    border: 2px solid #db2777; /* Borda colorida */
+    border-radius: 9px;
+    font-size: 2vh;
+    font-weight: 600;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+button:hover {
+    transform: scale(1.1);
 }
